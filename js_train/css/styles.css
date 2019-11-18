@@ -1,26 +1,23 @@
 body{
-    /* background: url("https://www.travelinsurancedirect.com.au/blog/wp-content/uploads/2015/02/must-have-camera-equipment-every-photographer-needs.jpg") no-repeat; */
     display: grid;
+    /* Убираем прокрутку по оси Х со всей страницы */
     overflow-x: hidden;
     background-color: black;
-    /* background-size: 140%; */
-    /* background-attachment: fixed; */
 }
 
+/* Создаем контейнер для изображения на бэкграунде, так как здесь
+есть свойтсво opacity, если его прописывать в боди, то прозрачными будут все элементы */
 .bg{
     background: url("http://blogs.esa.int/space19plus/files/2019/03/nebula.jpg") center top no-repeat;
-    /* filter: grayscale(300%); */
-    /* filter: opacity(50%); */
-    /* filter: saturate(-200%); */
-     /* background-position-y: 100px;  */
-     height: 100%;
+    /* z-index - это условная ось z в трехмерной системе координат, с помощью которого можно создавать
+    наслаивание над элементами или наоборот убирать их влияние, если таковое есть */
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.7;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 0; 
 }
 
 .nav-block{
@@ -40,9 +37,24 @@ body{
 .search{
     width: 25px;
     margin: 33px 90px;
+    /* fill - заливка, свойтсво для задания цвета svg */
     fill: white;
     cursor: pointer;
     z-index: 1;
+}
+
+.search-field{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-left: 30px;
+    margin-top: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 15%;
+    width: 200px;
 }
 
 .nav-element{
@@ -53,9 +65,11 @@ body{
 
 .nav-element > a{
     color:white;
+    /* Вес шрифта (вместо bold) */
     font-weight: 600;
 }
 
+/* При наведении на элемент навигации */
 .nav-element > a:hover{
     text-decoration: underline;
 }
@@ -71,8 +85,9 @@ body{
     margin: 0 15%;
     min-width: 250px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: sticky;
     top: 50px;
+    /* Свойства ниже создают эффект следования при прокрутке */
+    position: sticky;
     height: 100vh;
 }
 
@@ -154,18 +169,4 @@ body{
 
 .photo-add > a:hover{
     text-decoration: underline;
-}
-
-.search-field{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border-bottom: 3px solid white;
-    color: white;
-    margin-left: 30px;
-    margin-top: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    height: 15%;
-    width: 200px;
 }
