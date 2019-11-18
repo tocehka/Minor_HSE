@@ -1,0 +1,171 @@
+body{
+    /* background: url("https://www.travelinsurancedirect.com.au/blog/wp-content/uploads/2015/02/must-have-camera-equipment-every-photographer-needs.jpg") no-repeat; */
+    display: grid;
+    overflow-x: hidden;
+    background-color: black;
+    /* background-size: 140%; */
+    /* background-attachment: fixed; */
+}
+
+.bg{
+    background: url("http://blogs.esa.int/space19plus/files/2019/03/nebula.jpg") center top no-repeat;
+    /* filter: grayscale(300%); */
+    /* filter: opacity(50%); */
+    /* filter: saturate(-200%); */
+     /* background-position-y: 100px;  */
+     height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-block{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: repeat(6,6%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo{
+    padding: 30px 0;
+    padding-left: 60px;
+}
+
+.search{
+    width: 25px;
+    margin: 33px 90px;
+    fill: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-element{
+    padding: 40px 20px;
+    min-width: 200px;
+    
+}
+
+.nav-element > a{
+    color:white;
+    font-weight: 600;
+}
+
+.nav-element > a:hover{
+    text-decoration: underline;
+}
+
+.main-block{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: white;
+    margin-top: 50px;
+}
+
+.section-news{
+    margin: 0 15%;
+    min-width: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+    top: 50px;
+    height: 100vh;
+}
+
+.dot-container .active{
+    color: yellow;
+    font-size: 1.5em;
+}
+
+.dot-container{
+    color: rgb(92, 83, 83);
+}
+
+.section-news-title{
+    margin: 30% 0 ;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.section-news-annotation{
+    font-size: 1.1em;
+}
+
+
+.section-photo{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-row-gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.photo{
+    border-top: solid 5px yellow;
+}
+
+.photo-add{
+    display: grid;
+    grid-auto-rows: auto;
+    bottom: 0;
+    margin-left: 10%;
+}
+
+.photo-info{
+    display: grid;
+    grid-template-columns: repeat(2,20%);
+    grid-column-gap: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.photo-type{
+    background-color: yellow;
+    color:black;
+    margin-top:15px;
+    border-radius: 2px;
+    padding: 10px;
+    min-width: 47px;
+}
+
+.photo-views{
+    background-color: black;
+    margin-top:15px;
+    border-radius: 2px;
+    min-width: 100px;
+    padding: 10px;
+}
+
+.photo-add > a{
+    padding: 10px;
+    font-size: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(36, 34, 34);
+    margin-right: auto;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.photo-add > a:hover{
+    text-decoration: underline;
+}
+
+.search-field{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-left: 30px;
+    margin-top: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 15%;
+    width: 200px;
+}

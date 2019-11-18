@@ -1,0 +1,140 @@
+body{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+header{
+    background-color: blueviolet;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.menu{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.bar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5vw;
+    padding: 1.5vh;
+}
+.bar > a{
+    font-size: 1.4em;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+}
+.bar a:hover{
+    background-color: rgba(124, 23, 182, 0.76);
+}
+.bar a:active{
+    background-color: rgba(189, 136, 219, 0.986);
+}
+.border{
+    padding: 20px;
+}
+
+.center-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5vw;
+    padding: 4vh 0;
+}
+
+footer {
+    position: absolute;
+    left: 0 ; right: 0; bottom: 0;
+    height:7vh;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-size:1.2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 1% 0;
+}
+
+.footer-att{
+    width: 80%;
+    margin: auto;
+}
+
+.center-effects{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 75vh;
+}
+
+
+.center-bar{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    min-height: 40%;
+    max-height: 40%;
+    /* height: fit-content; */
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.center-bar > div{
+    padding: 5% 17%;
+}
+
+.cards-list{
+    display: grid;
+    grid-auto-rows: auto;
+    /* grid-row-gap: 30px; */
+}
+
+.cards-list:only-child{
+    width: 80%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100px;
+    padding: 20px 0;
+    /* margin: auto; */
+    border-bottom: 2px solid black;
+}
+
+.card:last-child{
+    border-bottom: none;
+}
+
+.author-photo{
+    margin-left: 40%;
+    border-radius: 8px;
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+}
+
+.text-container{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.text-container > div{
+    margin-bottom: 20px;
+}
+
+.status{
+    font-style: italic;
+}
+
+.center-bar > div > a{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
